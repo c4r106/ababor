@@ -26,7 +26,7 @@
         <div ui-view="body"></div>
         <div  ng-controller="menuController" ng-init="menulat()">
             <div id="menu-izq"  ng-show="get_menu_movil()">
-                <div ng-include="'./public/menu/menu.html'"></div>
+                <div ng-include="'./html/menu/menu_lateral.html'"></div>
             </div>
             <div id="menu-izq-bck" ng-show="get_menu_movil()"></div>
         </div>
@@ -42,6 +42,10 @@
     <script type="text/javascript" src="./js/librerias/angular-animate.js"></script>
 
     <script type="text/javascript" src="./js/modelo/modelo.js"></script>
+    <script type="text/javascript" src="./js/factoria/menu_factory.js"></script>
+    <script type="text/javascript" src="./js/controladores/rutas.js"></script>
     <script type="text/javascript" src="./js/controladores/on_resize.js"></script>
+    <script type="text/javascript" src="./js/controladores/menu_controller.js"></script>
+    <script type="text/javascript" src="./js/controladores/contacto.js"></script>
 </body>
 </html>

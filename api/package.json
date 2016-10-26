@@ -1,0 +1,8 @@
+{
+"name": "App",
+"main": "../server/server.js",
+"dependencies": {
+    "express": "~4.13.1",
+    "body-parser": "~1.0.1"
+}
+}
