@@ -18,10 +18,12 @@
 
     <link rel="stylesheet" type="text/css" href="css/init.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
+
+    <link rel="stylesheet" type="text/css" href="css/menu_lateral.css">
 </head>
 <body>
-    <div id="cabecera"></div>
-    <div id="menu"></div>
+
+    <div id="menu-container" ng-include="'./html/menu/menu.html'" ng-controller="menuController"></div>
     <div id="cuerpo">
         <div ui-view="body"></div>
         <div  ng-controller="menuController" ng-init="menulat()">

@@ -1,0 +1,153 @@
+#menu-izq.ng-hide{
+    left:-90%;
+}
+#menu-izq{
+    display: none;
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    z-index: 1001;
+    left: 0;
+    overflow: auto;
+    background: #f1f1f1;
+    transition: left .2s;
+    -webkit-transition: left .2s;
+    -moz-transition: left .2s;
+    -o-transition: left .2s;
+    /* border-right: 1px solid #424242;*/
+    max-width: 300px;
+    top:0;
+
+    /* para que no se pueda seleccionar el texto */
+    /* es engorroso cuando no pones esto, y se selecciona solo el texto al hacer click*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select:none;
+
+}
+#menu-izq div{
+    min-height: 200px;
+}
+
+#menu-izq ul li a img{
+    display: block;
+    position: relative;
+    float: left;
+    width: 15px;
+    height: 15px;
+    top: 2px;
+}
+#menu-izq ul li.menu-seleccionado a p{
+    color: #96beff;
+}
+#menu-izq ul li:nth-child(3) a img,#menu-izq ul li:nth-child(4) a img{
+    -webkit-transform: rotate(90deg)!important;
+    -moz-transform: rotate(90deg)!important;
+    -o-transform: rotate(-90deg)!important;
+    transform: rotate(90deg)!important;
+}
+#menu-izq-bck.ng-hide{
+    opacity:0;
+    z-index: 1000;
+}
+#menu-izq-bck{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity:1;
+    z-index: 1000;
+    background: rgba(0,0,0,.5);
+    transition: opacity .2s;
+    -webkit-transition:  opacity .2s;
+    -moz-transition:  opacity .2s;
+    -o-transition:  opacity .2s;
+    top:0;
+}
+#menu-izq ul{
+    display: block;
+    width: 100%;
+    height: auto;
+    float: left;
+}
+#menu-izq ul li ul{
+    width: 100%;
+    float: left;
+    background: white;
+}
+#menu-izq ul li ul li{
+    width: 90%;
+    float: right;
+}
+#menu-izq ul li{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: left;
+
+}
+#menu-izq ul li span{
+    display: none;
+}
+#menu-izq ul li a{
+    padding: 10px;
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+#menu-izq ul li a:hover{
+    cursor: pointer;
+}
+#menu-izq ul li a:hover > p,#menu-izq ul li a:focus > p{
+    color: #000000;
+
+}
+#menu-izq ul li a > p{
+    color: #858585;
+    transition: color .2s;
+    -webkit-transition:  color .2s;
+    -moz-transition:  color .2s;
+    -o-transition:  color .2s;
+    margin-left: 10px;
+    display: block;
+    position: relative;
+    float: left;
+    padding: 2px 0;
+}
+#menu-izq ul li ul li .linea-separadora{
+    background-color: #f1f1f1;
+}
+.linea-separadora{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background-color: #b3b3b3;
+    float: left;
+    min-height: 0!important;
+}
+li.menu-seleccionado a img.formacion-icon-img, #menu-izq ul li.menu-seleccionado a img.formacion-icon-img{
+    -webkit-transform: rotate(72deg)!important;
+    -moz-transform: rotate(72deg)!important;
+    -o-transform: rotate(-72deg)!important;
+    transform: rotate(72deg)!important;
+}
+@media only screen and (min-width: 480px) {
+
+}
+@media only screen and (min-width: 768px) {
+    #menu-izq,#menu-izq-bck{
+        display: none!important;
+    }
+}
+@media only screen and (min-width: 1140px) {
+
+}
+@media only screen and (min-width: 1920px) {
+
+}

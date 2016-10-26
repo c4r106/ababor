@@ -12,7 +12,7 @@ app.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
         .state('inicio', {
             url: "/inicio",
             views:{
-                "body": {templateUrl: "./index.html"}
+                "body": {templateUrl: "./html/cuerpo/inicio.html"}
             }
         })
         
