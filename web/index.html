@@ -11,14 +11,37 @@
     <meta name="description" content="">
     <meta name='generator' content="ababor">
     <meta name='keywords' content="">
-
     <meta name='Robots' content="All">
 
 
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="css/init.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
 </head>
 <body>
-	<h1>Ababor</h1>
-	<p>En construcción</p>
+    <div id="cabecera"></div>
+    <div id="menu"></div>
+    <div id="cuerpo">
+        <div ui-view="body"></div>
+        <div  ng-controller="menuController" ng-init="menulat()">
+            <div id="menu-izq"  ng-show="get_menu_movil()">
+                <div ng-include="'./public/menu/menu.html'"></div>
+            </div>
+            <div id="menu-izq-bck" ng-show="get_menu_movil()"></div>
+        </div>
+    </div>
+    <div id="footer"></div>
+
+
+
+    <script type="text/javascript" src="./js/librerias/angular.js"></script>
+    <script type="text/javascript" src="./js/librerias/sanitize.js"></script>
+    <script type="text/javascript" src="./js/librerias/angular-touch.js"></script>
+    <script type="text/javascript" src="./js/librerias/angular-ui-router.js"></script>
+    <script type="text/javascript" src="./js/librerias/angular-animate.js"></script>
+
+    <script type="text/javascript" src="./js/modelo/modelo.js"></script>
+    <script type="text/javascript" src="./js/controladores/on_resize.js"></script>
 </body>
 </html>
