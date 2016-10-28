@@ -9,7 +9,7 @@
     z-index: 1001;
     left: 0;
     overflow: auto;
-    background: #f1f1f1;
+    background: #ffffff;
     transition: left .2s;
     -webkit-transition: left .2s;
     -moz-transition: left .2s;
@@ -86,7 +86,7 @@
     height: auto;
     margin: 0 auto;
     float: left;
-
+    overflow: hidden;
 }
 #menu-izq ul li span{
     display: none;
@@ -108,7 +108,7 @@
 
 }
 #menu-izq ul li a > p{
-    color: #858585;
+    color: #555555;
     transition: color .2s;
     -webkit-transition:  color .2s;
     -moz-transition:  color .2s;
@@ -127,7 +127,7 @@
     position: relative;
     width: 100%;
     height: 1px;
-    background-color: #b3b3b3;
+    background-color: #f1f1f1;
     float: left;
     min-height: 0!important;
 }

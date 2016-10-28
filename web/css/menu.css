@@ -1,0 +1,160 @@
+#menu-container{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    float: left;
+    background-color: white;
+}
+#menu-superior{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    float: left;
+
+}
+#menu-superior .izq{
+    display: block;
+    position: relative;
+    float: left;
+    width: 70%;
+    height: 100%;
+}
+#menu-superior .izq span{
+
+    display: block;
+    position: relative;
+    float: left;
+    height: 26px;
+    width: 26px;
+    font-size: 26px;
+    margin: 12px;
+    color: #555555;
+    -webkit-transition: color .2s, background .2s;
+    -moz-transition: color .2s, background .2s;
+    -ms-transition: color .2s, background .2s;
+    -o-transition: color .2s, background .2s;
+    transition: color .2s, background .2s;
+
+}
+#menu-superior .izq span:hover,#menu-superior .izq span:focus{
+    cursor: pointer;
+    color: #303030;
+}
+#menu-superior .izq a{
+    display: block;
+    position: relative;
+    float: left;
+    font-size: 14px;
+    line-height: 50px;
+}
+#menu-superior .izq img{
+    display: none;
+}
+
+#menu-superior .der{
+    display: block;
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+#menu-superior .der ul{
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+#menu-inferior{
+    display: none;
+}
+
+
+@media only screen and (min-width: 480px) {
+
+}
+@media only screen and (min-width: 768px) {
+    #menu-inferior{
+        z-index: 1;
+        display: block;
+        position: relative;
+        width: 100%;
+        float: left;
+        height: 30px;
+
+    }
+    #menu-inferior ul{
+        display: block;
+        position: absolute;
+        float: left;
+        width: 100%;
+        height: auto;
+        background-color: #f0f0f0;
+    }
+    #menu-inferior ul li{
+        display: block;
+        position: relative;
+        width: 14.285%;
+        height: auto;
+        float: left;
+
+
+    }
+    #menu-inferior ul li:hover{
+        cursor: pointer;
+        background-color: #ffffff;
+    }
+    #menu-inferior ul li a,#menu-inferior ul li p{
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        line-height: 30px;
+
+    }
+    #menu-inferior ul li{
+        text-decoration: none;
+        -webkit-transition: background .2s;
+        -moz-transition: background .2s ;
+        -ms-transition: background .2s ;
+        -o-transition: background .2s ;
+        transition: background .2s ;
+    }
+    #menu-inferior ul li a:hover{
+        text-decoration: none;
+    }
+    #menu-inferior ul li:hover ul{
+        display: block;
+    }
+    #menu-inferior ul li ul{
+        display: none;
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+    #menu-inferior ul li ul li{
+        display: block;
+        position: relative;
+        width: 100%;
+        float: left;
+    }
+    #menu-inferior ul li ul li p{
+        text-align: left;
+        text-indent: 10px;
+    }
+    #menu-superior .izq span{
+        display: none;
+    }
+    #menu-superior .izq a{
+        margin-left: 5%;
+    }
+}
+@media only screen and (min-width: 1140px) {
+
+}
+@media only screen and (min-width: 1920px) {
+
+}

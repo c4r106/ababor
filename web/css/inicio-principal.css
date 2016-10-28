@@ -1,0 +1,171 @@
+#principal-wrap{
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin: 8px 0;
+    background-color:#ffffff;
+}
+#principal-logo-wrap{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 89%;
+    height: auto;
+    overflow: hidden;
+}
+#principal-logo-wrap h1{
+    font-family: "MyriadProREGULAR",Helvetica,arial,sans-serif;
+    font-size: 36px;
+    display: block;
+    position: relative;
+    width: auto;
+    text-align: center;
+    color: #555555;
+}
+#principal-logo-wrap h1 span{
+    color: #cac532;
+}
+#principal-logo{
+    display: block;
+    height: auto;
+    position: relative;
+    width: 55%;
+    margin: 0 auto;
+    max-width: 125px;
+}
+#esloganA{
+    display: block;
+    position: relative;
+    width: 89%;
+    height: 100%;
+    margin: 20px auto 0 auto;
+}
+#esloganA h2{
+    font-family: "RobotoCondensedLight",Helvetica,arial,sans-serif;
+    text-align: center;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    height: auto;
+    line-height: 21px;
+    color: #666666;
+}
+/*
+#esloganA h2:before { content: open-quote; }
+#esloganA h2:after  { content: close-quote; }
+*/
+#logoYtext-container{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+#principal-wrap-2,#principal-wrap-3,#principal-wrap-4,#principal-wrap-5,#principal-wrap-6,#principal-wrap-7{
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+}
+#principal-wrap-2{
+    background-color:#555555;
+
+}
+#principal-wrap-3{
+    background-color: #ffffff;
+}
+#principal-wrap-4{
+    background-color:#555555;
+}
+#principal-wrap-5{
+    background-color: #ffffff;
+}
+#principal-wrap-6{
+    background-color: #555555;
+}
+#principal-wrap-7{
+    background-color: #ffffff;
+}
+@media only screen and (min-width: 480px) {
+    #principal-logo{
+        float: left;
+        width: 155px;
+        max-width: none;
+    }
+    #principal-logo-wrap h1 {
+        position: relative;
+        display: block;
+        float: left;
+        text-indent: 20px;
+        font-size: 50px;
+        width: auto;
+        height: 100%;
+        text-align: left;
+    }
+    #esloganA{
+        margin: 30px auto 0 auto;
+    }
+    #esloganA h2 {
+        font-size: 21px;
+        line-height: 34px;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+
+}
+@media only screen and (min-width: 768px) {
+    #principal-logo{
+        width: 225px;
+    }
+    #principal-logo-wrap h1 {
+        text-indent: 25px;
+        font-size: 60px;
+    }
+    #esloganA{
+        margin: 40px auto 0 auto;
+    }
+    #esloganA h2 {
+        font-size: 26px;
+        line-height: 55px;
+        width: 85%;
+    }
+
+}
+@media only screen and (min-width: 1140px) {
+    #principal-logo{
+        width: 245px;
+    }
+    #principal-logo-wrap h1 {
+        text-indent: 27px;
+        font-size: 68px;
+    }
+    #esloganA{
+        margin: 60px auto 0 auto;
+    }
+    #esloganA h2 {
+        font-size: 30px;
+        line-height: 60px;
+        width: 67%;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    #principal-logo{
+        width: 265px;
+    }
+    #principal-logo-wrap h1 {
+        text-indent: 27px;
+        font-size: 70px;
+    }
+    #esloganA{
+        margin: 75px auto 0 auto;
+    }
+    #esloganA h2 {
+        font-size: 36px;
+        line-height: 66px;
+        width: 55%;
+    }
+}

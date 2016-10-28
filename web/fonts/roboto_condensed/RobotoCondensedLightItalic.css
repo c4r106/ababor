@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'RobotoCondensedLightItalic';
+    src: url('fonts/RobotoCondensedLightItalic.eot');
+    src: url('fonts/RobotoCondensedLightItalic.eot') format('embedded-opentype'),
+         url('fonts/RobotoCondensedLightItalic.woff2') format('woff2'),
+         url('fonts/RobotoCondensedLightItalic.woff') format('woff'),
+         url('fonts/RobotoCondensedLightItalic.ttf') format('truetype'),
+         url('fonts/RobotoCondensedLightItalic.svg#RobotoCondensedLightItalic') format('svg');
+}

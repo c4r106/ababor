@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'MyriadProBOLD';
+    src: url('../fonts/myriad_pro/MYRIADPROBOLD.eot');
+    src: url('../fonts/myriad_pro/MYRIADPROBOLD.eot') format('embedded-opentype'),
+    url('../fonts/myriad_pro/MYRIADPROBOLD.woff2') format('woff2'),
+    url('../fonts/myriad_pro/MYRIADPROBOLD.woff') format('woff'),
+    url('../fonts/myriad_pro/MYRIADPROBOLD.ttf') format('truetype'),
+    url('../fonts/myriad_pro/MYRIADPROBOLD.svg#MYRIADPROBOLD') format('svg');
+}
+@font-face {
+    font-family: 'MyriadProBOLDCOND';
+    src: url('../fonts/myriad_pro/MYRIADPROBOLDCOND.eot');
+    src: url('../fonts/myriad_pro/MYRIADPROBOLDCOND.eot') format('embedded-opentype'),
+    url('../fonts/myriad_pro/MYRIADPROBOLDCOND.woff2') format('woff2'),
+    url('../fonts/myriad_pro/MYRIADPROBOLDCOND.woff') format('woff'),
+    url('../fonts/myriad_pro/MYRIADPROBOLDCOND.ttf') format('truetype'),
+    url('../fonts/myriad_pro/MYRIADPROBOLDCOND.svg#MYRIADPROBOLDCOND') format('svg');
+}
+@font-face {
+    font-family: 'MyriadProBOLDCONDIT';
+    src: url('../fonts/myriad_pro/MYRIADPROBOLDCONDIT.eot');
+    src: url('../fonts/myriad_pro/MYRIADPROBOLDCONDIT.eot') format('embedded-opentype'),
+    url('../fonts/myriad_pro/MYRIADPROBOLDCONDIT.woff2') format('woff2'),
+    url('../fonts/myriad_pro/MYRIADPROBOLDCONDIT.woff') format('woff'),
+    url('../fonts/myriad_pro/MYRIADPROBOLDCONDIT.ttf') format('truetype'),
+    url('../fonts/myriad_pro/MYRIADPROBOLDCONDIT.svg#MYRIADPROBOLDCONDIT') format('svg');
+}
+@font-face {
+    font-family: 'MyriadProBOLDIT';
+    src: url('../fonts/myriad_pro/MYRIADPROBOLDIT.eot');
+    src: url('../fonts/myriad_pro/MYRIADPROBOLDIT.eot') format('embedded-opentype'),
+    url('../fonts/myriad_pro/MYRIADPROBOLDIT.woff2') format('woff2'),
+    url('../fonts/myriad_pro/MYRIADPROBOLDIT.woff') format('woff'),
+    url('../fonts/myriad_pro/MYRIADPROBOLDIT.ttf') format('truetype'),
+    url('../fonts/myriad_pro/MYRIADPROBOLDIT.svg#MYRIADPROBOLDIT') format('svg');
+}
+@font-face {
+    font-family: 'MyriadProCOND';
+    src: url('../fonts/myriad_pro/MYRIADPROCOND.eot');
+    src: url('../fonts/myriad_pro/MYRIADPROCOND.eot') format('embedded-opentype'),
+    url('../fonts/myriad_pro/MYRIADPROCOND.woff2') format('woff2'),
+    url('../fonts/myriad_pro/MYRIADPROCOND.woff') format('woff'),
+    url('../fonts/myriad_pro/MYRIADPROCOND.ttf') format('truetype'),
+    url('../fonts/myriad_pro/MYRIADPROCOND.svg#MYRIADPROCOND') format('svg');
+}
+@font-face {
+    font-family: 'MyriadProCONDIT';
+    src: url('../fonts/myriad_pro/MYRIADPROCONDIT.eot');
+    src: url('../fonts/myriad_pro/MYRIADPROCONDIT.eot') format('embedded-opentype'),
+    url('../fonts/myriad_pro/MYRIADPROCONDIT.woff2') format('woff2'),
+    url('../fonts/myriad_pro/MYRIADPROCONDIT.woff') format('woff'),
+    url('../fonts/myriad_pro/MYRIADPROCONDIT.ttf') format('truetype'),
+    url('../fonts/myriad_pro/MYRIADPROCONDIT.svg#MYRIADPROCONDIT') format('svg');
+}
+@font-face {
+    font-family: 'MyriadProREGULAR';
+    src: url('../fonts/myriad_pro/MYRIADPROREGULAR.eot');
+    src: url('../fonts/myriad_pro/MYRIADPROREGULAR.eot') format('embedded-opentype'),
+    url('../fonts/myriad_pro/MYRIADPROREGULAR.woff2') format('woff2'),
+    url('../fonts/myriad_pro/MYRIADPROREGULAR.woff') format('woff'),
+    url('../fonts/myriad_pro/MYRIADPROREGULAR.ttf') format('truetype'),
+    url('../fonts/myriad_pro/MYRIADPROREGULAR.svg#MYRIADPROREGULAR') format('svg');
+}
+@font-face {
+    font-family: 'MyriadProSEMIBOLD';
+    src: url('../fonts/myriad_pro/MYRIADPROSEMIBOLD.eot');
+    src: url('../fonts/myriad_pro/MYRIADPROSEMIBOLD.eot') format('embedded-opentype'),
+    url('../fonts/myriad_pro/MYRIADPROSEMIBOLD.woff2') format('woff2'),
+    url('../fonts/myriad_pro/MYRIADPROSEMIBOLD.woff') format('woff'),
+    url('../fonts/myriad_pro/MYRIADPROSEMIBOLD.ttf') format('truetype'),
+    url('../fonts/myriad_pro/MYRIADPROSEMIBOLD.svg#MYRIADPROSEMIBOLD') format('svg');
+}
+@font-face {
+    font-family: 'MyriadProSEMIBOLDIT';
+    src: url('../fonts/myriad_pro/MYRIADPROSEMIBOLDIT.eot');
+    src: url('../fonts/myriad_pro/MYRIADPROSEMIBOLDIT.eot') format('embedded-opentype'),
+    url('../fonts/myriad_pro/MYRIADPROSEMIBOLDIT.woff2') format('woff2'),
+    url('../fonts/myriad_pro/MYRIADPROSEMIBOLDIT.woff') format('woff'),
+    url('../fonts/myriad_pro/MYRIADPROSEMIBOLDIT.ttf') format('truetype'),
+    url('../fonts/myriad_pro/MYRIADPROSEMIBOLDIT.svg#MYRIADPROSEMIBOLDIT') format('svg');
+}

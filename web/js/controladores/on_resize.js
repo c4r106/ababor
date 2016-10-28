@@ -2,15 +2,88 @@ var app=angular.module('ababor.on_resize_controller', []);
 app.controller('onResize',['$scope', function($scope) {
 
     $scope.autoResize = function() {
-        $scope.hWindow = document.body.offsetHeight;
-        $scope.wWindow = document.body.offsetWidth;
-        $scope.cuerpo = document.getElementById("cuerpo");
         $scope.menu = document.getElementById("menu-container");
-
         if($scope.menu != null){
-            $scope.menu = $scope.menu.offsetHeight;
-            $scope.tMain = $scope.hWindow-$scope.menu;
-            $scope.cuerpo.style.height = $scope.tMain + "px";
+            $scope.hWindow = document.body.offsetHeight;
+            $scope.wWindow = document.body.offsetWidth;
+            $scope.cuerpo = document.getElementById("cuerpo");
+            /* Poner el tamanyo de la imagen cuadrada respecto al ancho */
+            var imagen = document.getElementById("principal-logo");
+            if(imagen!=null){
+                imagen.style.height = imagen.offsetWidth+"px";
+                var texto = document.getElementById("textAlto").offsetWidth;
+                if($scope.wWindow >= 480){
+                    document.getElementById("logoYtext-container").style.height = imagen.offsetWidth+"px";
+                    document.getElementById("logoYtext-container").style.width = imagen.offsetWidth+texto+1+"px";
+                    document.getElementById("textAlto").style.lineHeight = imagen.offsetWidth+27+"px";
+                }
+                else{
+                    document.getElementById("logoYtext-container").style.height = "auto";
+                    document.getElementById("logoYtext-container").style.width = "auto";
+                    document.getElementById("textAlto").style.lineHeight = "36px";
+                }
+                if($scope.wWindow >= 768){
+                    document.getElementById("textAlto").style.lineHeight = imagen.offsetWidth+35+"px";
+                }
+                if($scope.wWindow >= 1140){
+                    document.getElementById("textAlto").style.lineHeight = imagen.offsetWidth+40+"px";
+                }
+                if($scope.wWindow >= 1920){
+                    document.getElementById("textAlto").style.lineHeight = imagen.offsetWidth+44+"px";
+                }
+
+
+            }
+
+
+
+            /* Ajustar contenedor principal a la altura de la pantalla */
+            var tamanyo_max =  document.getElementById("principal-logo-wrap");
+            $scope.altura = document.getElementById("principal-wrap");
+            $scope.altura2 = document.getElementById("principal-wrap-2");
+            $scope.altura3 = document.getElementById("principal-wrap-3");
+            $scope.altura4 = document.getElementById("principal-wrap-4");
+            $scope.altura5 = document.getElementById("principal-wrap-5");
+            $scope.altura6 = document.getElementById("principal-wrap-6");
+            $scope.altura7 = document.getElementById("principal-wrap-7");
+
+            if(tamanyo_max!=null){
+                $scope.menu = $scope.menu.offsetHeight;
+                $scope.tMain = $scope.hWindow-$scope.menu;
+                $scope.cuerpo.style.height = $scope.tMain + "px";
+                var max = tamanyo_max.offsetHeight;
+                if($scope.cuerpo.offsetHeight>=tamanyo_max.offsetHeight)
+                    var centrar = ($scope.cuerpo.offsetHeight-tamanyo_max.offsetHeight)/3;
+                else
+                    var centrar = (tamanyo_max.offsetHeight-$scope.cuerpo.offsetHeight)/3;
+
+                if($scope.hWindow <= max){
+                    $scope.altura.style.height = max+$scope.menu + "px";
+                    $scope.altura2.style.height = max+$scope.menu + "px";
+                    $scope.altura3.style.height = max+$scope.menu + "px";
+                    $scope.altura4.style.height = max+$scope.menu + "px";
+                    $scope.altura5.style.height = max+$scope.menu + "px";
+                    $scope.altura6.style.height = max+$scope.menu + "px";
+                    $scope.altura7.style.height = max+$scope.menu + "px";
+                    tamanyo_max.style.marginTop = centrar-$scope.menu +"px";
+                }
+                else{
+                    $scope.altura.style.height = $scope.cuerpo.offsetHeight + "px";
+                    $scope.altura2.style.height = $scope.cuerpo.offsetHeight + "px";
+                    $scope.altura3.style.height = $scope.cuerpo.offsetHeight + "px";
+                    $scope.altura4.style.height = $scope.cuerpo.offsetHeight + "px";
+                    $scope.altura5.style.height = $scope.cuerpo.offsetHeight + "px";
+                    $scope.altura6.style.height = $scope.cuerpo.offsetHeight + "px";
+                    $scope.altura7.style.height = $scope.cuerpo.offsetHeight + "px";
+                    tamanyo_max.style.marginTop = centrar +"px";
+                }
+
+                tamanyo_max.style.marginTop = centrar +"px";
+
+            }
+
+
+
         }
 
     };

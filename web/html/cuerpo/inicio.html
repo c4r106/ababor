@@ -1,1 +1,53 @@
-<h1>Ababor</h1>
+
+<div id="principal-wrap" ng-controller="onResize"  >
+    <div id="principal-logo-wrap">
+        <div id="logoYtext-container">
+            <img ng-init="autoResize()" id="principal-logo" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MDAgNTAwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MDAgNTAwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6dXJsKCNTVkdJRF8xXyk7fS5zdDF7ZmlsbDp1cmwoI1NWR0lEXzJfKTt9LnN0MntmaWxsOiNGRkZGRkY7fS5zdDN7ZmlsbDp1cmwoI1NWR0lEXzNfKTt9PC9zdHlsZT48bGluZWFyR3JhZGllbnQgaWQ9IlNWR0lEXzFfIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjQ1NS4zNzU3IiB5MT0iMzc5LjQ0OTYiIHgyPSI4Ni4zMjQyIiB5Mj0iLTMuMDIyIj48c3RvcCAgb2Zmc2V0PSIwIiBzdHlsZT0ic3RvcC1jb2xvcjojMjQyNDI0Ii8+PHN0b3AgIG9mZnNldD0iMC4xMzcxIiBzdHlsZT0ic3RvcC1jb2xvcjojMkUyRDJDIi8+PHN0b3AgIG9mZnNldD0iMC4zOTE2IiBzdHlsZT0ic3RvcC1jb2xvcjojNDQ0MzQxIi8+PHN0b3AgIG9mZnNldD0iMC43MzI3IiBzdHlsZT0ic3RvcC1jb2xvcjojNkQ2QzZDIi8+PHN0b3AgIG9mZnNldD0iMSIgc3R5bGU9InN0b3AtY29sb3I6Izk5OTk5OSIvPjwvbGluZWFyR3JhZGllbnQ+PHBhdGggY2xhc3M9InN0MCIgZD0iTTMwNS4zLDE1MS42YzUxLjQsMzIuNSw5NS45LDY5LjQsMTA2LjYsMTMyLjZjMjkuMSwxMS43LDU2LjIsMjguNCw3OS40LDQ4LjZjMC40LTYuMSwwLjYtMTIuMiwwLjYtMTguNGMwLTE1My42LTEyNC41LTI3OC4xLTI3OC4xLTI3OC4xYy04Mi41LDAtMTU2LjUsMzUuOS0yMDcuNSw5Mi45YzI2LjMsNC4xLDUyLjIsMTEuNiw3Ni45LDIyLjZjMzQuOC0yNy43LDc1LjEtMjUuNiwxMjMuMS0yNS42YzQuMSwwLDEyLTE3LjksMTYtMTcuNmw0OS45LDcuM0wzMDUuMywxNTEuNnoiLz48cmFkaWFsR3JhZGllbnQgaWQ9IlNWR0lEXzJfIiBjeD0iMTk2LjI3NTIiIGN5PSIxODguMDgwNCIgcj0iMjY5LjU2NjkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCAgb2Zmc2V0PSIwIiBzdHlsZT0ic3RvcC1jb2xvcjojQjFCMUIxIi8+PHN0b3AgIG9mZnNldD0iMC4xMjIzIiBzdHlsZT0ic3RvcC1jb2xvcjojQTlBOEE4Ii8+PHN0b3AgIG9mZnNldD0iMC4zMDY1IiBzdHlsZT0ic3RvcC1jb2xvcjojOTI4RjhGIi8+PHN0b3AgIG9mZnNldD0iMC41Mjk5IiBzdHlsZT0ic3RvcC1jb2xvcjojNkY2QzZDIi8+PHN0b3AgIG9mZnNldD0iMC43ODE1IiBzdHlsZT0ic3RvcC1jb2xvcjojNDk0NjQ1Ii8+PHN0b3AgIG9mZnNldD0iMSIgc3R5bGU9InN0b3AtY29sb3I6IzI3MjYyNSIvPjwvcmFkaWFsR3JhZGllbnQ+PHBhdGggY2xhc3M9InN0MSIgZD0iTTQxMS45LDI4NGMtMTIuNC0xMDAtOTYuOS0xNzcuMS0xOTkuMy0xNzcuMWMtNDcsMC05NS43LDE3LjItMTMwLDQ0LjVjNTcuOSwyNi4yLDEwOC45LDcxLjcsMTQwLjIsMTI3YzI2LTguMiw1Ni4yLTE0LjYsODUtMTQuNkMzNDQuNywyNjMuNywzNzkuNywyNzAuNyw0MTEuOSwyODR6Ii8+PGNpcmNsZSBjbGFzcz0ic3QyIiBjeD0iMjY4LjUiIGN5PSIxMTkuNCIgcj0iNDQuOSIvPjxyYWRpYWxHcmFkaWVudCBpZD0iU1ZHSURfM18iIGN4PSIxMTYuOTA1MyIgY3k9IjUxNS42NzMzIiByPSIzOTQuNzU5MSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wICBvZmZzZXQ9IjAiIHN0eWxlPSJzdG9wLWNvbG9yOiM5NDY0MUYiLz48c3RvcCAgb2Zmc2V0PSI0LjM5OTkwMmUtMDAyIiBzdHlsZT0ic3RvcC1jb2xvcjojOTk2RDIwIi8+PHN0b3AgIG9mZnNldD0iMC4yMTY4IiBzdHlsZT0ic3RvcC1jb2xvcjojQUQ4RDI0Ii8+PHN0b3AgIG9mZnNldD0iMC4zODgxIiBzdHlsZT0ic3RvcC1jb2xvcjojQzBBQjJBIi8+PHN0b3AgIG9mZnNldD0iMC41NTQ2IiBzdHlsZT0ic3RvcC1jb2xvcjojQ0ZDNDMwIi8+PHN0b3AgIG9mZnNldD0iMC43MTQ5IiBzdHlsZT0ic3RvcC1jb2xvcjojREFENTMzIi8+PHN0b3AgIG9mZnNldD0iMC44NjY0IiBzdHlsZT0ic3RvcC1jb2xvcjojRTBERTM1Ii8+PHN0b3AgIG9mZnNldD0iMSIgc3R5bGU9InN0b3AtY29sb3I6I0UyRTAzNiIvPjwvcmFkaWFsR3JhZGllbnQ+PHBhdGggY2xhc3M9InN0MyIgZD0iTTIyMi44LDI3OC40Yy0xMy4xLTIyLjktMjkuNC00NC41LTQ5LTY0LjFjLTI3LjEtMjcuMS01OC4yLTQ4LTkxLjMtNjIuN2MtNDIuMywzNy45LTY5LDkzLjktNjksMTU2LjJjMCw0Ni41LDE0LjgsODkuMywzOS45LDEyMy45Qzg1LjEsMzU5LjIsMTQ2LjgsMzAyLjksMjIyLjgsMjc4LjR6Ii8+PC9zdmc+" alt="Logotipo ababor.es" style="">
+            <h1 id="textAlto"><span>a</span>babor.es</h1>
+        </div>
+        <div id="esloganA">
+            <h2>Abordamos tus proyectos innovadores de manera ágil y efectiva tanto desde el enfoque empresarial como el tecnológico.</h2>
+        </div>
+    </div>
+</div>
+<div id="principal-wrap-2" ng-controller="onResize"  >
+    <h1>Metodología</h1>
+    <p>Nos basamos en metodologías ágiles de para incrementar el éxito futuro del proyecto eliminando incertidumbre y acortando los plazos de desarrollo</p>
+</div>
+<div id="principal-wrap-3" ng-controller="onResize"  >
+    <h1>Diferencia</h1>
+    <p>No sólo desarrollamos Apps. Te acompañamos durante todo el proceso de desarrollo desde lo más básico (Customer Development) hasta la salida al mercado, pasando por todo el desarrollo tecnológico</p>
+</div>
+<div id="principal-wrap-4" ng-controller="onResize"  >
+    <h1>Quienes somos</h1>
+    <p>Somos dos jóvenes emprendedores alicantinos apasionados por los proyectos innovadores y el desarrollo ágil, con un amplio bagaje de proyectos a nuestras espaldas y con la ilusión de ayudar a cambiar el mundo</p>
+</div>
+<div id="principal-wrap-5" ng-controller="onResize"  >
+    <h1>Colaboradores</h1>
+    <img>
+    <img>
+    <img>
+</div>
+<div id="principal-wrap-6" ng-controller="onResize"  >
+    <h1>Formación</h1>
+    <p>¿Necesitas que formemos a tu equipo de innovación en el mundo de las
+
+        metodologías ágiles como eje fundamental en el desarrollo de proyectos
+
+        exitosos?
+
+        Contacta con nosotros en info@ababor.es y estaremos encantados de
+
+        ayudarte.</p>
+</div>
+<div id="principal-wrap-7" ng-controller="onResize"  >
+    <h1>Innovación</h1>
+    <p>Método Ababor Innovation. Método propio de desarrollo intra-empresa de
+
+        proyectos innovadores mediante inmersión del equipo ababor.es con equipo de
+
+        trabajo propio de tu empresa.
+
+        Si estás interesado escríbenos a info@ababor.es y te llamaremos hoy mismo.</p>
+</div>
+
