@@ -1,10 +1,40 @@
+#banner{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+
+}
+#banner-img{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    border: none;
+    border-radius: 0%;
+    background-image: url('../img/fondoA.png');
+    background-position: center 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+
+}
+#banner-gradient{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0);
+    top:0;
+}
 #principal-wrap{
     display: block;
     position: relative;
     float: left;
     width: 100%;
     height: 100%;
-    margin: 8px 0;
     background-color:#ffffff;
 }
 #principal-logo-wrap{
@@ -23,6 +53,8 @@
     width: auto;
     text-align: center;
     color: #555555;
+    letter-spacing: 3px;
+
 }
 #principal-logo-wrap h1 span{
     color: #cac532;
@@ -43,14 +75,15 @@
     margin: 20px auto 0 auto;
 }
 #esloganA h2{
-    font-family: "RobotoCondensedLight",Helvetica,arial,sans-serif;
+    font-family: "Bebas Neue Regular",Helvetica,arial,sans-serif;
     text-align: center;
-    font-size: 16px;
+    font-size: 12px;
     display: block;
     width: 100%;
     height: auto;
-    line-height: 21px;
+    line-height: 24px;
     color: #666666;
+    letter-spacing: 2px;
 }
 /*
 #esloganA h2:before { content: open-quote; }
@@ -71,28 +104,54 @@
     height: auto;
 }
 #principal-wrap-2{
-    background-color:#555555;
+    background-color:#efefef;
 
 }
 #principal-wrap-3{
     background-color: #ffffff;
 }
 #principal-wrap-4{
-    background-color:#555555;
+    background-color:#efefef;
 }
 #principal-wrap-5{
     background-color: #ffffff;
 }
 #principal-wrap-6{
-    background-color: #555555;
+    background-color: #efefef;
 }
 #principal-wrap-7{
     background-color: #ffffff;
 }
+#scroll-down-arrow{
+    display: block;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-image: url(../img/flecha.png);
+    background-position: center;
+    background-size: contain;
+    bottom: 13px;
+    -webkit-animation: pulse .8s infinite;
+    -moz-animation: pulse .8s infinite;
+    -o-animation: pulse .8s infinite;
+    animation: pulse .8s infinite;
+}
+@-webkit-keyframes pulse {
+    0% { bottom: 13px; }
+    50% { bottom: 10px; }
+    100% { bottom: 13px;}
+}
 @media only screen and (min-width: 480px) {
+    #scroll-down-arrow{
+        width: 50px;
+        height: 50px;
+    }
     #principal-logo{
         float: left;
-        width: 155px;
+        width: 125px;
         max-width: none;
     }
     #principal-logo-wrap h1 {
@@ -100,17 +159,18 @@
         display: block;
         float: left;
         text-indent: 20px;
-        font-size: 50px;
-        width: auto;
+        font-size: 40px;
         height: 100%;
         text-align: left;
+        width: 240px;
+        letter-spacing: 5px;
     }
     #esloganA{
-        margin: 30px auto 0 auto;
+        margin: 25px auto 0 auto;
     }
     #esloganA h2 {
-        font-size: 21px;
-        line-height: 34px;
+        font-size: 14px;
+        line-height: 28px;
         width: 85%;
         margin: 0 auto;
     }
@@ -118,54 +178,75 @@
 
 }
 @media only screen and (min-width: 768px) {
+    #scroll-down-arrow{
+        width: 55px;
+        height: 55px;
+        -webkit-animation: pulse .8s infinite;
+        -moz-animation: pulse .8s infinite;
+        -o-animation: pulse .8s infinite;
+        animation: pulse .8s infinite;
+    }
     #principal-logo{
-        width: 225px;
+        width: 130px;
     }
     #principal-logo-wrap h1 {
         text-indent: 25px;
-        font-size: 60px;
+        font-size: 50px;
+        width: 272px;
     }
     #esloganA{
-        margin: 40px auto 0 auto;
+        margin: 30px auto 0 auto;
     }
     #esloganA h2 {
-        font-size: 26px;
-        line-height: 55px;
+        font-size: 16px;
+        line-height: 32px;
         width: 85%;
     }
 
 }
 @media only screen and (min-width: 1140px) {
+    #scroll-down-arrow{
+        width: 60px;
+        height: 60px;
+    }
     #principal-logo{
-        width: 245px;
+        width: 150px;
     }
     #principal-logo-wrap h1 {
         text-indent: 27px;
-        font-size: 68px;
+        font-size: 52px;
+        width: 328px;
+        letter-spacing: 6px;
     }
     #esloganA{
-        margin: 60px auto 0 auto;
+        margin: 35px auto 0 auto;
     }
     #esloganA h2 {
-        font-size: 30px;
-        line-height: 60px;
+        font-size: 18px;
+        line-height: 36px;
         width: 67%;
     }
 }
 @media only screen and (min-width: 1920px) {
+    #scroll-down-arrow{
+        width: 65px;
+        height: 65px;
+    }
     #principal-logo{
-        width: 265px;
+        width: 170px;
     }
     #principal-logo-wrap h1 {
         text-indent: 27px;
-        font-size: 70px;
+        font-size: 54px;
+        width: 336px;
+        letter-spacing: 7px;
     }
     #esloganA{
-        margin: 75px auto 0 auto;
+        margin: 40px auto 0 auto;
     }
     #esloganA h2 {
-        font-size: 36px;
-        line-height: 66px;
+        font-size: 20px;
+        line-height: 40px;
         width: 55%;
     }
 }

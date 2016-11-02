@@ -20,17 +20,25 @@
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
     <link rel="stylesheet" type="text/css" href="css/robotoCondensed.css">
     <link rel="stylesheet" type="text/css" href="css/myriadPro.css">
+    <link rel="stylesheet" type="text/css" href="css/bebasNeue.css">
+    <link rel="stylesheet" type="text/css" href="css/impactLabel.css">
+    <link rel="stylesheet" type="text/css" href="css/exo2.css">
+    <link rel="stylesheet" type="text/css" href="css/lato.css">
+    <link rel="stylesheet" type="text/css" href="css/leagueGothic.css">
+    <link rel="stylesheet" type="text/css" href="css/sansation.css">
+    <link rel="stylesheet" type="text/css" href="css/sourceSansPro.css">
 
     <link rel="stylesheet" type="text/css" href="css/menu.css">
     <link rel="stylesheet" type="text/css" href="css/cuerpo.css">
     <link rel="stylesheet" type="text/css" href="css/menu_lateral.css">
     <link rel="stylesheet" type="text/css" href="css/inicio-principal.css">
+    <link rel="stylesheet" type="text/css" href="css/contacto.css">
 </head>
 <body>
 
     <div id="menu-container" ng-include="'./html/menu/menu.html'" ng-controller="menuController"></div>
     <div id="cuerpo">
-        <div ui-view="body"></div>
+        <div ui-view="body" id="cuerpo-principal" ng-controller="onScrollbar" on-scrollbar></div>
         <div  ng-controller="menuController" ng-init="menulat()">
             <div id="menu-izq"  ng-show="get_menu_movil()">
                 <div ng-include="'./html/menu/menu_lateral.html'"></div>
@@ -52,6 +60,7 @@
     <script type="text/javascript" src="./js/factoria/menu_factory.js"></script>
     <script type="text/javascript" src="./js/controladores/rutas.js"></script>
     <script type="text/javascript" src="./js/controladores/on_resize.js"></script>
+    <script type="text/javascript" src="./js/controladores/on_scrollbar.js"></script>
     <script type="text/javascript" src="./js/controladores/menu_controller.js"></script>
     <script type="text/javascript" src="./js/controladores/contacto.js"></script>
 </body>

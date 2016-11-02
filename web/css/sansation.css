@@ -1,0 +1,72 @@
+
+@font-face {
+    font-family: 'Sansation Italic';
+    src: url('../fonts/sansation/Sansation-Italic.eot');
+    src: url('../fonts/sansation/Sansation-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/sansation/Sansation-Italic.woff2') format('woff2'),
+    url('../fonts/sansation/Sansation-Italic.woff') format('woff'),
+    url('../fonts/sansation/Sansation-Italic.ttf') format('truetype'),
+    url('../fonts/sansation/Sansation-Italic.svg#../fonts/sansation/Sansation-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sansation Bold Italic';
+    src: url('../fonts/sansation/Sansation-BoldItalic.eot');
+    src: url('../fonts/sansation/Sansation-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/sansation/Sansation-BoldItalic.woff2') format('woff2'),
+    url('../fonts/sansation/Sansation-BoldItalic.woff') format('woff'),
+    url('../fonts/sansation/Sansation-BoldItalic.ttf') format('truetype'),
+    url('../fonts/sansation/Sansation-BoldItalic.svg#../fonts/sansation/Sansation-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sansation Regular';
+    src: url('../fonts/sansation/Sansation-Regular.eot');
+    src: url('../fonts/sansation/Sansation-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/sansation/Sansation-Regular.woff2') format('woff2'),
+    url('../fonts/sansation/Sansation-Regular.woff') format('woff'),
+    url('../fonts/sansation/Sansation-Regular.ttf') format('truetype'),
+    url('../fonts/sansation/Sansation-Regular.svg#../fonts/sansation/Sansation-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sansation Light';
+    src: url('../fonts/sansation/Sansation-Light.eot');
+    src: url('../fonts/sansation/Sansation-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/sansation/Sansation-Light.woff2') format('woff2'),
+    url('../fonts/sansation/Sansation-Light.woff') format('woff'),
+    url('../fonts/sansation/Sansation-Light.ttf') format('truetype'),
+    url('../fonts/sansation/Sansation-Light.svg#../fonts/sansation/Sansation-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sansation Bold';
+    src: url('../fonts/sansation/Sansation-Bold.eot');
+    src: url('../fonts/sansation/Sansation-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/sansation/Sansation-Bold.woff2') format('woff2'),
+    url('../fonts/sansation/Sansation-Bold.woff') format('woff'),
+    url('../fonts/sansation/Sansation-Bold.ttf') format('truetype'),
+    url('../fonts/sansation/Sansation-Bold.svg#../fonts/sansation/Sansation-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sansation Light Italic';
+    src: url('../fonts/sansation/Sansation-LightItalic.eot');
+    src: url('../fonts/sansation/Sansation-LightItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/sansation/Sansation-LightItalic.woff2') format('woff2'),
+    url('../fonts/sansation/Sansation-LightItalic.woff') format('woff'),
+    url('../fonts/sansation/Sansation-LightItalic.ttf') format('truetype'),
+    url('../fonts/sansation/Sansation-LightItalic.svg#../fonts/sansation/Sansation-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}

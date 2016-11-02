@@ -4,13 +4,14 @@ var bodyParser  = require('body-parser');
 
 
 
-
+app.use(bodyParser.json({limit:'50mb'}));
+app.use(bodyParser.urlencoded({limit:'50mb', extended: true}));
 app.use(bodyParser());
 
 var port = process.env.PORT || 8084;
 
 var router = express.Router();
-
+var ctr_contacto = require('../api/controladores/contacto');
 //var ctr_facebook = require('../api/controladores/facebook');
 
 
@@ -20,7 +21,7 @@ var router = express.Router();
 var os = require('os');
 var hostname = os.hostname();
 console.log("hostname: "+ hostname)
-
+//================================ DIRECTORIOS ===========================================
 if(hostname == "ababor.es")
     __dirname = '/var/www/vhosts/ababor.es/httpdocs/web/';
 else if(hostname == "C4R106-4SU6")
@@ -30,7 +31,7 @@ else if(hostname == "C4R106-PC")
 else
     __dirname = '/var/www/vhosts/ababor.es/httpdocs/web/';
 app.use(express.static(__dirname));
-app.use('/index', router);
+
 
 
 //================================ CROSSDOMAIN ===========================================
@@ -48,10 +49,10 @@ var permitCrossDomainRequests = function(req, res, next) {
     }
 };
 app.use(permitCrossDomainRequests);
+app.use('/index', router);
 
 
-
-
+router.post('/contacto', ctr_contacto.sendEmail);
 //router.route('/getPostFacebook')
   //  .get(ctr_facebook.getPostFacebook);
 

@@ -118,6 +118,9 @@
     position: relative;
     float: left;
     padding: 2px 0;
+    font-family: "Lato Light",Helvetica,arial,sans-serif;
+    letter-spacing: 5px;
+    font-size: 12px;
 }
 #menu-izq ul li ul li .linea-separadora{
     background-color: #f1f1f1;
@@ -138,7 +141,9 @@ li.menu-seleccionado a img.formacion-icon-img, #menu-izq ul li.menu-seleccionado
     transform: rotate(72deg)!important;
 }
 @media only screen and (min-width: 480px) {
-
+    #menu-izq ul li a > p{
+        font-size: 14px;
+    }
 }
 @media only screen and (min-width: 768px) {
     #menu-izq,#menu-izq-bck{

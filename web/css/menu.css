@@ -71,7 +71,9 @@
 #menu-inferior{
     display: none;
 }
-
+#menu-pc{
+    display:none ;
+}
 
 @media only screen and (min-width: 480px) {
 
@@ -145,16 +147,71 @@
         text-align: left;
         text-indent: 10px;
     }
-    #menu-superior .izq span{
+    #menu-superior .izq, #menu-superior .der{
         display: none;
     }
     #menu-superior .izq a{
         margin-left: 5%;
     }
+    #menu-pc{
+        display:block ;
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    #menu-pc ul{
+        display:block ;
+        position: relative;
+        width: auto;
+        height: 100%;
+        margin: 0 auto;
+        float: left;
+
+    }
+    #menu-pc ul li{
+        display:block ;
+        position: relative;
+        width: auto;
+        height: 100%;
+        float: left;
+
+    }
+    #menu-pc ul li a{
+        display:block ;
+        position: relative;
+        width: auto;
+        height: 100%;
+        line-height: 50px;
+        padding: 0 20px;
+        font-family: "Lato Light",Helvetica,arial,sans-serif;
+        letter-spacing: 5px;
+        color: #777777;
+        -webkit-transition: color .3s;
+        -moz-transition: color .3s;
+        -ms-transition: color .3s;
+        -o-transition: color .3s;
+        transition: color .3s;
+        font-size: 12px;
+
+    }
+    #menu-pc ul li a:hover{
+        cursor: pointer;
+        color: #555555;
+    }
 }
 @media only screen and (min-width: 1140px) {
-
+    #menu-pc ul li a{
+        padding: 0 35px;
+    }
+    #menu-pc ul li a{
+        font-size: 14px;
+    }
 }
 @media only screen and (min-width: 1920px) {
-
+    #menu-pc ul li a{
+        padding: 0 55px;
+    }
+    #menu-pc ul li a{
+        font-size: 16px;
+    }
 }

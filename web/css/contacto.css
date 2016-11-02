@@ -1,0 +1,250 @@
+.formulario{
+    display: block;
+    position: relative;
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+}
+.formulario ul{
+    list-style: none;
+}
+.formulario ul li{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+.formulario ul li label,.formulario ul li .inputText,.formulario ul li textarea{
+    font-size: 12px;
+}
+.formulario ul li label{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+    margin: 0 auto 20px auto;
+    padding: 10px 0 0 0;
+    color: rgba(50,50,50,.8);
+
+}
+.formulario ul li input.ng-touched.ng-invalid-required,.formulario ul li textarea.ng-touched.ng-invalid-required {
+    border: 1px solid #fdad54;!important;
+}
+.formulario ul li .ng-hide-add{
+    animation:0.5s Out ease;
+}
+.formulario ul li .ng-hide-remove{
+    animation:0.5s In ease;
+}
+
+.formulario .button:hover,.formulario .button:focus{
+    cursor: pointer;
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid #f3854a;
+    background-color: #fdad54;
+}
+.formulario .button{
+    font-size: 13px;
+}
+.formulario ul li  {
+    margin-bottom: 8px;
+}
+.formulario ul li span{
+    font-size: 11px;
+}
+.formulario ul li label,.formulario ul li .inputText,.formulario ul li textarea{
+    font-size: 13px;
+}
+.formulario{
+    padding: 30px 0;
+}
+@keyframes In {
+    0% { opacity: 0;  }
+    100% { opacity: 1; }
+}
+@keyframes Out {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+.formulario ul li span{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin: 20px auto 0 auto;
+    left: 0;
+    padding: 5px 0;
+    right: 0;
+    color: #fdad54;
+    font-size: 10px;
+}
+.formulario ul li .inputText{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-indent: 20px;
+    border: 1px solid rgba(100, 100, 100, .2);
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    outline: none;
+    background-color: rgba(255,255,255,.2);
+}
+.formulario ul li textarea{
+    display: block;
+    position: relative;
+    width: 90%;
+    min-height: 150px;
+    padding: 10px 10px;
+    resize: none;
+    overflow-y: scroll;
+    border: 1px solid rgba(100, 100, 100, .2);
+    outline: none;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    background-color: rgba(255,255,255,.8);
+}
+.formulario ul li .inputText:focus,.formulario ul li .inputText:hover{
+    border: 1px solid #96beff;
+    background-color: rgba(255,255,255,.5);
+}
+.formulario ul li textarea:focus,.formulario ul li textarea:hover{
+    border: 1px solid #96beff;
+    background-color: rgba(255,255,255,.5);
+}
+
+.formulario p{
+    display: block;
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin: 0 auto 20px auto;
+    padding: 10px 0 0 0;
+}
+.formulario .button{
+    font-size: 12px;
+    line-height: 40px;
+    display: block;
+    color: rgba(255, 255, 255, 0.9);
+    height: auto;
+    margin: 20px auto;
+    text-align: center;
+    transition: color .2s,border .2s,background .2s;
+    -webkit-transition: color .2s,border .2s,background .2s;
+    -moz-transition: color .2s,border .2s,background .2s;
+    -o-transition: color .2s,border .2s,background .2s;
+    background-color: #96beff;
+    border: 1px solid #8cb4f5;
+    border-radius: 0px;
+    padding: 5px;
+    min-width: 160px;
+    width: 50%;
+    max-width: 250px;
+}
+
+form{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* border: 1px solid rgba(179, 184, 152, 0.8); */
+    margin: 0 auto;
+    font-family: "Roboto-Regular",Helvetica,arial,sans-serif;
+}
+@media only screen and (min-width: 480px) {
+    .formulario .button{
+        font-size: 13px;
+    }
+    .formulario ul li  {
+        margin-bottom: 8px;
+    }
+    .formulario ul li span{
+        font-size: 11px;
+    }
+    .formulario ul li label,.formulario ul li .inputText,.formulario ul li textarea{
+        font-size: 13px;
+    }
+    .formulario{
+        padding: 30px 0;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .formulario .button{
+        font-size: 15px;
+    }
+    .formulario ul li  {
+        margin-bottom: 10px;
+    }
+    .formulario ul li label{
+        padding: 10px 0 2px 0;
+    }
+    .formulario ul li span{
+        padding: 7px 0;
+        font-size: 12px;
+    }
+    .formulario ul li label,.formulario ul li .inputText,.formulario ul li textarea{
+        font-size: 15px;
+    }
+    .formulario{
+        padding: 40px 0;
+    }
+}
+@media only screen and (min-width: 1140px) {
+    .formulario .button{
+        font-size: 17px;
+    }
+    .formulario ul li  {
+        margin-bottom: 15px;
+    }
+    .formulario ul li label{
+        padding: 10px 0 5px 0;
+    }
+    .formulario ul li span{
+        padding: 9px 0;
+        font-size: 14px;
+    }
+    .formulario ul li  {
+        margin-bottom: 15px;
+    }
+    .formulario ul li label,.formulario ul li .inputText,.formulario ul li textarea{
+        font-size: 18px;
+    }
+    .formulario{
+        padding: 50px 0;
+    }
+
+}
+@media only screen and (min-width: 1920px) {
+    .formulario .button{
+        font-size: 19px;
+    }
+    .formulario ul li  {
+        margin-bottom: 20px;
+    }
+    .formulario ul li label{
+        padding: 10px 0 7px 0;
+    }
+    .formulario ul li span{
+        padding: 11px 0;
+        font-size: 16px;
+    }
+    .formulario ul li  {
+        margin-bottom: 20px;
+    }
+    .formulario ul li label,.formulario ul li .inputText,.formulario ul li textarea{
+        font-size: 20px;
+    }
+    .formulario{
+        padding: 60px 0;
+    }
+}
